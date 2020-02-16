@@ -6,7 +6,7 @@ ruby "2.6.5"
 gem "jbuilder", "~> 2.7"
 gem "puma", "~> 3.11"
 gem "rails", "~> 6.0.0"
-gem 'rails-i18n'
+gem "rails-i18n"
 gem "sass-rails", "~> 5"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
