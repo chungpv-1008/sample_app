@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+<% if @first_micropost != nil %>
+  <p>User' first micropost:
+  <h2>Id: <%= @first_micropost.id %></h2>
+  <h3>Content: <%= @first_micropost.content %></h3>
+<% else %>
+  <h2>Not micropost yet!...</h2>
+<% end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
