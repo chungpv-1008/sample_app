@@ -1,0 +1,23 @@
+vi:
+  static_pages:
+    home:
+      title: "Trang chủ"
+      tips: "Trang chủ"
+      description: "Đây là trang chủ"
+    help:
+      title: "Trợ giúp"
+      tips: "Trang trợ giúp"
+      description: "Đây là trang trợ giúp"
+    about:
+      title: "Giới thiệu"
+      tips: "Trang giới thiệu"
+      description: "Đây là trang giới thiệu"
+    contact:
+      title: "Liên hệ"
+      tips: "Trang liên hệ"
+      description: "Đây là trang liên hệ"
+  layouts:
+    application:
+      language_en: "Tiếng Anh"
+      language_vi: "Tiếng Việt"
+      ror_after: "Ứng dụng đơn giản dùng Ruby on Rails"
