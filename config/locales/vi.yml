@@ -30,3 +30,16 @@ vi:
     new:
       title: "Đăng ký"
       tips: "Đây là trang đăng ký"
+      name: "Tên đăng ký"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      signup: "Tạo tài khoản"
+    signup:
+      welcome: "Chào mừng bạn..."
+      failed: "Đăng ký thất bại..."
+      not_find_url: "Không tồn tại đường dẫn..."
+      the_form: "Biểu mẫu chứa "
+      count:
+        one: "%{count} lỗi"
+        other: "%{count} lỗi"

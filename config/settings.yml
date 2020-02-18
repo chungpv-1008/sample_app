@@ -3,4 +3,7 @@ user:
   email_regex_string: !ruby/regexp '/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i'
   email_maximum_length: 255
   password_minimum_length: 6
+  gravatar_image_size: 280
+  signup_success: "Welcome to the sample app..."
+  signup_failed: "Sign up failed..."
   
