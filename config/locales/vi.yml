@@ -4,6 +4,7 @@ vi:
       title: "Trang chủ"
       tips: "Trang chủ"
       description: "Đây là trang chủ"
+      sign_up_now: "Đăng ký ngay!"
     help:
       title: "Trợ giúp"
       tips: "Trang trợ giúp"
@@ -21,3 +22,11 @@ vi:
       language_en: "Tiếng Anh"
       language_vi: "Tiếng Việt"
       ror_after: "Ứng dụng đơn giản dùng Ruby on Rails"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      about: "Giới thiệu"
+      contact: "Liên hệ"
+  users:
+    new:
+      title: "Đăng ký"
+      tips: "Đây là trang đăng ký"
