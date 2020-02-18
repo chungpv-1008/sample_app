@@ -4,6 +4,7 @@ en:
       title: "Home"
       tips: "Home Page"
       description: "This is home page"
+      sign_up_now: "Sign up now!"
     help:
       title: "Help"
       tips: "Help Page"
@@ -21,3 +22,11 @@ en:
       language_en: "English"
       language_vi: "Vietnamese"
       ror_after: "Ruby on Rails Tutorial Sample App"
+      home: "Home"
+      help: "Help"
+      about: "About"
+      contact: "Contact"
+  users:
+    new:
+      title: "Sign up"
+      tips: "This is sign up page"
