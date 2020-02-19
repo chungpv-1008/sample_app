@@ -1,10 +1,6 @@
-@import 'bootstrap-sprockets' ; 
-@import 'bootstrap' ;
-
-$gray-medium-light: #eaeaea;
-$white: white;
-$bbb: #bbb;
-$red: red;
+@import 'color';
+@import 'bootstrap-sprockets'; 
+@import 'bootstrap';
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;

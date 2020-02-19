@@ -26,6 +26,14 @@ en:
       help: "Help"
       about: "About"
       contact: "Contact"
+    _header:
+      sample_app: "Sample app"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      log_in: "Log in"
+      log_out: "Log out"
+      account: "Account"
   users:
     new:
       title: "Sign up"
@@ -43,3 +51,15 @@ en:
       count:
         one: "%{count} error"
         other: "%{count} errors"
+  sessions:
+    new:
+      title: "Log in"
+      tips: "Log in"
+      email: "Email address"
+      password: "Password"
+      login: "Log in my account"
+      new_user: "New user?"
+      signup_new: "Sign up now!"
+    login_failed: "Invalid email/password combination"
+    log_out_success: "Log out success!"
+    welcome_back: "Welcome back!"

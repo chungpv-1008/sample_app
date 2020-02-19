@@ -26,6 +26,14 @@ vi:
       help: "Trợ giúp"
       about: "Giới thiệu"
       contact: "Liên hệ"
+    _header:
+      sample_app: "Ứng dụng mẫu"
+      users: "Người dùng"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      log_in: "Đăng nhập"
+      log_out: "Đăng xuất"
+      account: "Tài khoản"
   users:
     new:
       title: "Đăng ký"
@@ -43,3 +51,15 @@ vi:
       count:
         one: "%{count} lỗi"
         other: "%{count} lỗi"
+  sessions:
+    new:
+      title: "Đăng nhập"
+      tips: "Đăng nhập"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      login: "Đăng nhập tài khoản"
+      new_user: "Tạo người dùng mới?"
+      signup_new: "Đăng ký ngay!"
+    login_failed: "Email hoặc mật khẩu không chính xác"
+    log_out_success: "Đăng xuất thành công!"
+    welcome_back: "Chào mừng bạn quay trở lại!"
