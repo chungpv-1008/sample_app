@@ -2,8 +2,9 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.5"
-
+gem "bcrypt", "~> 3.1.13"
 gem "bootstrap-sass", "~> 3.4.1"
+gem "config", "~> 2.2", ">= 2.2.1"
 gem "jbuilder", "~> 2.7"
 gem "puma", "~> 3.11"
 gem "rails", "~> 6.0.0"
