@@ -60,6 +60,7 @@ vi:
       login: "Đăng nhập tài khoản"
       new_user: "Tạo người dùng mới?"
       signup_new: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ đăng nhập cho lần sau"
     login_failed: "Email hoặc mật khẩu không chính xác"
     log_out_success: "Đăng xuất thành công!"
     welcome_back: "Chào mừng bạn quay trở lại!"
