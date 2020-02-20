@@ -44,3 +44,4 @@ db/test.sqlite3-1
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+test
