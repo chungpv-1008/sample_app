@@ -1,11 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
-    
-    flash[:danger] = t "users.signup.not_find_url"
-    redirect_to root_path
+  before_action :logged_in_user, except: %i(new show create)
+  before_action :find_user, except: %i(index new create)
+  before_action :correct_user, only: %i(edit update)
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.page(params[:page]).per Settings.user.per_of_page
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -23,9 +26,61 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update user_params
+      flash[:success] = t "users.controllers.update_succeed"
+      redirect_to @user
+    else
+      flash.now[:danger] = t "users.controllers.update_failed"
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t "users.controllers.destroyed_succeed"
+      redirect_to users_url
+    else
+      flash[:danger] = t "users.controllers.destroyed_failed"
+      redirect_to users_url
+    end
+  end
+
   private
   def user_params
-    params.require(:user).permit(:name, :email, :password,
-                                 :password_confirmation)
+    params.require(:user).permit :name, :email, :password,
+                                 :password_confirmation
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "users.controllers.please_log_in"
+    redirect_to login_url
+  end
+
+  def correct_user
+    return if current_user? @user
+
+    flash[:danger] = t "users.controllers.not_allow"
+    redirect_to root_url
+  end
+
+  def admin_user
+    return if current_user.admin?
+
+    flash[:danger] = t "users.controllers.not_allow"
+    redirect_to root_path
+  end
+
+  def find_user
+    @user = User.find_by id: params[:id]
+    return if @user
+
+    flash[:danger] = t "users.controllers.not_find_user"
+    redirect_to root_path
   end
 end

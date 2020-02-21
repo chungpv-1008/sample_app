@@ -51,6 +51,33 @@ en:
       count:
         one: "%{count} error"
         other: "%{count} errors"
+    edit:
+      title: "Edit user"
+      tips: "Update your profile"
+      name: "Name"
+      email: "Email address"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+      submit_change: "Submit change"
+      change: "Change"
+    index:
+      title: "All users"
+      tips: "All users"
+      delete: "Delete"
+      are_you_sure: "Are you sure?"
+    form:
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password Confirmation"
+    controllers: 
+      update_failed: "Updated failed"
+      update_succeed: "Updated succeed"
+      please_log_in: "Please log in."
+      destroyed_succeed: "Deleted succeed"
+      destroyed_failed: "Destroyed failed"
+      not_allow: "Not allow access!"
+      not_find_user: "Not existed user!"
   sessions:
     new:
       title: "Log in"
@@ -61,6 +88,7 @@ en:
       new_user: "New user?"
       signup_new: "Sign up now!"
       remember_me: "Remember me on this computer"
-    login_failed: "Invalid email/password combination"
-    log_out_success: "Log out success!"
-    welcome_back: "Welcome back!"
+    controllers: 
+      login_failed: "Invalid email/password combination"
+      log_out_success: "Log out success!"
+      welcome_back: "Welcome back!"

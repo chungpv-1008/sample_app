@@ -51,6 +51,33 @@ vi:
       count:
         one: "%{count} lỗi"
         other: "%{count} lỗi"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      tips: "Cập nhật hồ sơ"
+      name: "Tên đăng ký"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+      submit_change: "Gửi thay đổi"
+      change: "Thay đổi"
+    index:
+      title: "Tất cả người dùng"
+      tips: "Tất cả người dùng"
+      delete: "Xóa"
+      are_you_sure: "Bạn có chắc không?"
+    form:
+      name: "Tên"
+      email: "Địa chỉ email"
+      password: "Mật khẩu"
+      password_confirmation: "Mật khẩu xác nhận"
+    controllers:
+      update_failed: "Cập nhật bị lỗi"
+      update_succeed: "Cập nhật thành công"
+      please_log_in: "Vui lòng đăng nhập."
+      destroyed_succeed: "Xóa thành công người dùng"
+      destroyed_failed: "Không thể xóa người dùng"
+      not_allow: "Không được phép truy cập!"
+      not_find_user: "Không tồn tại người dùng!"
   sessions:
     new:
       title: "Đăng nhập"
@@ -61,6 +88,7 @@ vi:
       new_user: "Tạo người dùng mới?"
       signup_new: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập cho lần sau"
-    login_failed: "Email hoặc mật khẩu không chính xác"
-    log_out_success: "Đăng xuất thành công!"
-    welcome_back: "Chào mừng bạn quay trở lại!"
+    controllers:
+      login_failed: "Email hoặc mật khẩu không chính xác"
+      log_out_success: "Đăng xuất thành công!"
+      welcome_back: "Chào mừng bạn quay trở lại!"

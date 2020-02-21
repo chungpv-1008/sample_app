@@ -6,4 +6,12 @@ user:
   gravatar_image_size: 280
   signup_success: "Welcome to the sample app..."
   signup_failed: "Sign up failed..."
+  size_gravatar: 80
+  gravatar_url: "http://gravatar.com/emails"
+  per_of_page: 10
+seeds:
+  name: "Chung Pham Van"
+  email: "phamvanchung11111999@gmail.com"
+  password: "123456"
+  password_confirmation: "123456"
   
