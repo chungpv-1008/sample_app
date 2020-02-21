@@ -3,7 +3,9 @@ User.create!(
   email: Settings.seeds.email,
   password: Settings.seeds.password,
   password_confirmation: Settings.seeds.password_confirmation,
-  admin: Settings.seeds.admin
+  admin: Settings.seeds.admin,
+  activated: Settings.seeds.activated,
+  activated_at: Time.zone.now
 )
 
 99.times do |n|
@@ -14,6 +16,8 @@ User.create!(
     name:  name,
     email: email,
     password: password,
-    password_confirmation: password
+    password_confirmation: password,
+    activated: Settings.seeds.activated,
+    activated_at: Time.zone.now
   )
 end
