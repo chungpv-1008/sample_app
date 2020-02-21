@@ -60,6 +60,7 @@ en:
       login: "Log in my account"
       new_user: "New user?"
       signup_new: "Sign up now!"
+      remember_me: "Remember me on this computer"
     login_failed: "Invalid email/password combination"
     log_out_success: "Log out success!"
     welcome_back: "Welcome back!"
