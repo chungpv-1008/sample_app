@@ -1,6 +1,6 @@
 @import 'color';
-@import 'bootstrap-sprockets'; 
 @import 'bootstrap';
+@import 'bootstrap-sprockets';
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -175,4 +175,14 @@ input {
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }
