@@ -45,6 +45,7 @@ vi:
       signup: "Tạo tài khoản"
     signup:
       welcome: "Chào mừng bạn..."
+      please_check: "Vui lòng kiểm tra tài khoản email của bạn để kích hoạt tài khoản."
       failed: "Đăng ký thất bại..."
       not_find_url: "Không tồn tại đường dẫn..."
       the_form: "Biểu mẫu chứa "
@@ -78,6 +79,7 @@ vi:
       destroyed_failed: "Không thể xóa người dùng"
       not_allow: "Không được phép truy cập!"
       not_find_user: "Không tồn tại người dùng!"
+      not_activated_account: "Tài khoản này chưa được kích hoạt!"
   sessions:
     new:
       title: "Đăng nhập"
@@ -92,3 +94,16 @@ vi:
       login_failed: "Email hoặc mật khẩu không chính xác"
       log_out_success: "Đăng xuất thành công!"
       welcome_back: "Chào mừng bạn quay trở lại!"
+      account_not_activated: "Tài khoản chưa được kích hoạt. Kiểm tra tài khoản email của bạn để kích hoạt tài khoản"
+  user_mailer:
+    account_activation:
+      sample_app: "Ứng dụng mẫu"
+      hi: "Xin chào"
+      welcome: "Chào mừng bạn đến với ứng dụng mẫu, click vào đường dẫn bên dưới để kích hoạt tài khoản!"
+      activate: "Kích hoạt"
+  account_activations:
+    invalid_action_link: "Đường dẫn không hoạt động"
+    account_activated: "Tài khoản đã kích hoạt!"
+  mailers:
+    user_mailer:
+      subject_mail: "Kích hoạt tài khoản"
