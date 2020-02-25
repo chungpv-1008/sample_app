@@ -6,10 +6,11 @@ user:
   gravatar_image_size: 280
   signup_success: "Welcome to the sample app..."
   signup_failed: "Sign up failed..."
-  size_gravatar: 80
+  size_gravatar: 60
   gravatar_url: "http://gravatar.com/emails"
   per_of_page: 10
   two_hours: 2
+  image_size_limit: 500
 seeds:
   name: "Chung Pham Van"
   email: "phamvanchung11111999@gmail.com"
@@ -18,3 +19,10 @@ seeds:
   admin: true
   activated: true
 time_zone: "UTC"
+micropost:
+  content_maximum_length: 140
+  gravatar_image_size: 60
+  per_of_page: 4
+  image_size_mb: 5
+  content_type: ["image/jpeg", "image/gif", "image/png"]
+  accept_image: "image/jpeg,image/gif,image/png"

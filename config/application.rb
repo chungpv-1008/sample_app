@@ -13,5 +13,6 @@ module SampleApp
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :en
     config.time_zone = Settings.time_zone
+    config.middleware.use I18n::JS::Middleware
   end
 end

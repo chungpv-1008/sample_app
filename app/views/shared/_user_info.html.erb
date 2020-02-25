@@ -1,0 +1,6 @@
+<%= link_to gravatar_for(current_user, size: Settings.user.size_gravatar), current_user %>
+<h1><%= current_user.name %></h1>
+<span><%= link_to t("shared._user_info.view_my_profile") , current_user %></span>
+<span>
+  <%= t "shared._user_info.count", count: current_user.microposts.size %>
+</span>
