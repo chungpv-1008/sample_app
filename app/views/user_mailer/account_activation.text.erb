@@ -1,5 +1,8 @@
-Hi <%= @user.name %>,
+<%= edit_account_activation_url(id: @user.activation_token,email: @user.email) %>
+<%= t "user_mailer.account_activation.sample_app" %>
 
-Welcome to the Sample App! Click on the link below to activate your account:
+<%= t "user_mailer.account_activation.hi" %> <%= @user.name %>
 
-<%= edit_account_activation_url @user.activation_token, @user.email %>
+<%= t "user_mailer.account_activation.welcome" %>
+
+<%= edit_account_activation_url(id: @user.activation_token,email: @user.email) %>

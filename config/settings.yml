@@ -9,6 +9,7 @@ user:
   size_gravatar: 80
   gravatar_url: "http://gravatar.com/emails"
   per_of_page: 10
+  two_hours: 2
 seeds:
   name: "Chung Pham Van"
   email: "phamvanchung11111999@gmail.com"
