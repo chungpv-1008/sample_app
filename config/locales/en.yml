@@ -90,6 +90,7 @@ en:
       new_user: "New user?"
       signup_new: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot passoword)"
     controllers: 
       login_failed: "Invalid email/password combination"
       log_out_success: "Log out success!"
@@ -101,9 +102,35 @@ en:
       hi: "Hi"
       welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
       activate: "Activate"
+    password_reset:
+      title: "Password reset"
+      to_reset: "To reset your password click the link below:"
+      reset_password: "Reset password"
+      if_you: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
   account_activations:
     invalid_action_link: "Invalid activation link"
     account_activated: "Account activated!"
   mailers:
     user_mailer:
-      subject_mail: "Account Activation"
+      subject_mail_signup: "Account Activation"
+      subject_mail_password_reset: "Password reset"
+  password_resets:
+    new:
+      title: "Forgot password"
+      tips: "Forgot password"
+      email: "Email"
+      submit: "Submit"
+    edit:
+      title: "Reset password"
+      tips: "Reset password"
+      password_new: "Password New"
+      password_confirmation_new: "Below Password Confirmation"
+      update_password: "Update password"
+    controllers:
+      email_sent_password_reset: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      not_active_account: "Not active account"
+      cant_not_empty: "can't not empty"
+      reset_password_succeed: "Password has been reset"
+      password_reset_expired: "Password reset has expired"
+      failed_update: "Update password is failed"

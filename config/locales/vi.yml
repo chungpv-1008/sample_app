@@ -90,6 +90,7 @@ vi:
       new_user: "Tạo người dùng mới?"
       signup_new: "Đăng ký ngay!"
       remember_me: "Ghi nhớ đăng nhập cho lần sau"
+      forgot_password: "(Quên mật khẩu)"
     controllers:
       login_failed: "Email hoặc mật khẩu không chính xác"
       log_out_success: "Đăng xuất thành công!"
@@ -106,4 +107,25 @@ vi:
     account_activated: "Tài khoản đã kích hoạt!"
   mailers:
     user_mailer:
-      subject_mail: "Kích hoạt tài khoản"
+      subject_mail_signup: "Kích hoạt tài khoản"
+      subject_mail_password_reset: "Đặt lại mật khẩu"
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      tips: "Quên mật khẩu"
+      email: "Địa chỉ email"
+      submit: "Gửi"
+    edit:
+      title: "Đặt lại mật khẩu"
+      tips: "Đặt lại mật khẩu"
+      password_new: "Mật khẩu mới"
+      password_confirmation_new: "Xác nhận mật khẩu mới"
+      update_password: "Cập nhật mật khẩu"
+    controllers:
+      email_sent_password_reset: "Email đã gửi mật khẩu mới"
+      email_not_found: "Không tìm thấy địa chỉ email"
+      not_active_account: "Tài khoản này chưa được kích hoạt"
+      cant_not_empty: "Không được để trống"
+      reset_password_succeed: "Mật khẩu đã được cập nhật"
+      password_reset_expired: "Việc cập nhật mật khẩu đã hết hạn"
+      failed_update: "Không thể cập nhật mật khẩu"
