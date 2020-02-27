@@ -11,7 +11,8 @@
       </h1> 
     </section>
   </aside>
-  <div>
+  <div class="col-md-8">
+    <%= render "follow_form" if logged_in? %>
     <% if @user.microposts.any? %>
       <h3>
         <%= t ".microposts" %> <%= @user.microposts.size %>

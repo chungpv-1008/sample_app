@@ -84,6 +84,13 @@ en:
       not_allow: "Not allow access!"
       not_find_user: "Not existed user!"
       not_activated_account: "Not activated this account!"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+  relationships:
+    find_user:
+      invalid_user: "Invalid user"
   sessions:
     new:
       title: "Log in"
@@ -164,3 +171,16 @@ en:
     _micropost_form:
       placeholder: "Compose new micropost..."
       post: "Post"
+    stats:
+      following: "following"
+      followers: "followers"
+  follows:
+    show_follow:
+      micropost: "Micropost:"
+      view_my_profile: "view my profile"
+    followers:
+      title: "Followers"
+    following:
+      title: "Following"
+    find_user:
+      not_find_user: "Not find user!"
