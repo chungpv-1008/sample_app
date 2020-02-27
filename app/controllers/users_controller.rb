@@ -10,6 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
+    @microposts = @user.microposts.order_microposts_desc.page(params[:page])
+                       .per Settings.micropost.per_of_page
     return if @user.activated?
     
     flash[:info] = t "users.controllers.not_activated_account"
@@ -58,14 +60,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
                                  :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "users.controllers.please_log_in"
-    redirect_to login_url
   end
 
   def correct_user

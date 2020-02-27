@@ -5,6 +5,7 @@ en:
       tips: "Home Page"
       description: "This is home page"
       sign_up_now: "Sign up now!"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Help"
       tips: "Help Page"
@@ -52,6 +53,9 @@ en:
       count:
         one: "%{count} error"
         other: "%{count} errors"
+    show:
+      title: "User"
+      microposts: "Microposts"
     edit:
       title: "Edit user"
       tips: "Update your profile"
@@ -134,3 +138,29 @@ en:
       reset_password_succeed: "Password has been reset"
       password_reset_expired: "Password reset has expired"
       failed_update: "Update password is failed"
+  microposts:
+    _micropost:
+      post: "Posted "
+      ago: " ago."
+      delete: "Delete"
+      you_sure: "Are you sure?"
+    controllers:
+      created_succeed: "Micropost created!"
+      succeed_deletting: "Micropost has not deleted"
+      failed_deletting: "Micropost has deleted"
+      not_find_micropost: "Not find micropost"
+      created_failed: "Not created micropost!"
+    model:
+      message_content_type: "must be a valid image format"
+      message_size: "should be less than 5 MB"
+    js:
+      maximum_file_size: "Maximum file size is 5MB. Please choose a smaller file."
+  shared:
+    _user_info:
+      view_my_profile: "view my profile"
+      count:
+        one: "%{count} micropost"
+        other: "%{count} microposts"
+    _micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"

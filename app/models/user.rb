@@ -10,9 +10,11 @@ class User < ApplicationRecord
   validates :password, presence: true,
     length: {minimum: Settings.user.password_minimum_length},
     allow_nil: true
+    
   before_save :downcase_email
   before_create :create_activation_digest
   has_secure_password
+  has_many :microposts, dependent: :destroy
   
   scope :activated_true, -> {where(activated: true)}
 
@@ -38,7 +40,7 @@ class User < ApplicationRecord
 
   def authenticated? attribute, token
     digest = send "#{attribute}_digest"
-    return false unless token
+    return false unless token and digest
     
     BCrypt::Password.new(digest).is_password? token
   end

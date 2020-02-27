@@ -35,7 +35,7 @@ class PasswordResetsController < ApplicationController
   end
 
   def find_user
-    email_param = params[:email] ||= params[:password_reset][:email]
+    email_param = request.post? ? params[:password_reset][:email] : params[:email]
     @user = User.find_by email: email_param
     return if @user
 

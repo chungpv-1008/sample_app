@@ -5,6 +5,7 @@ vi:
       tips: "Trang chủ"
       description: "Đây là trang chủ"
       sign_up_now: "Đăng ký ngay!"
+      micropost_feed: "Micropost Feed"
     help:
       title: "Trợ giúp"
       tips: "Trang trợ giúp"
@@ -52,6 +53,9 @@ vi:
       count:
         one: "%{count} lỗi"
         other: "%{count} lỗi"
+    show:
+      title: "Người dùng"
+      microposts: "Microposts"
     edit:
       title: "Chỉnh sửa người dùng"
       tips: "Cập nhật hồ sơ"
@@ -129,3 +133,29 @@ vi:
       reset_password_succeed: "Mật khẩu đã được cập nhật"
       password_reset_expired: "Việc cập nhật mật khẩu đã hết hạn"
       failed_update: "Không thể cập nhật mật khẩu"
+  microposts:
+    _micropost:
+      post: "Đăng lên "
+      ago: " trước."
+      delete: "Xóa"
+      you_sure: "Bạn có chắc muốn xóa không?"
+    controllers:
+      created_succeed: "Micropost đã được tạo!"
+      succeed_deletting: "Micropost đã được xóa"
+      failed_deletting: "Micropost chưa được xóa"
+      not_find_micropost: "Không tìm thấy micropost"
+      created_failed: "Có lỗi khi tạo micropost!"
+    model:
+      message_content_type: "phải là 1 ảnh đúng định dạng"
+      message_size: "phải nhỏ hơn 5 MB"
+    js:
+      maximum_file_size: "Kích thước lớn nhất của tệp là 5MB. Vui lòng chọn tệp khác nhỏ hơn."
+  shared:
+    _user_info:
+      view_my_profile: "xem trang hồ sơ"
+      count:
+        one: "%{count} micropost"
+        other: "%{count} micropost"
+    _micropost_form:
+      placeholder: "Tạo micropost mới..."
+      post: "Đăng"
