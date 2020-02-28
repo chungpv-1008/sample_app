@@ -5,7 +5,7 @@ class MicropostsController < ApplicationController
   def create
     @micropost = current_user.microposts.build micropost_params
     @micropost.image.attach micropost_params[:image]
-    @feed_items = current_user.feed.page(params[:page])
+    @feed_items = Micropost.feed(current_user.id).page(params[:page])
                               .per Settings.micropost.per_of_page
     flash.now[:danger] = t "microposts.controllers.created_failed"
     render "static_pages/home" and return unless @micropost.save

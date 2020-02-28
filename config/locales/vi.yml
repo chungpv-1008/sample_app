@@ -84,6 +84,13 @@ vi:
       not_allow: "Không được phép truy cập!"
       not_find_user: "Không tồn tại người dùng!"
       not_activated_account: "Tài khoản này chưa được kích hoạt!"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+  relationships:
+    find_user:
+      invalid_user: "Không tồn tài người dùng"
   sessions:
     new:
       title: "Đăng nhập"
@@ -159,3 +166,16 @@ vi:
     _micropost_form:
       placeholder: "Tạo micropost mới..."
       post: "Đăng"
+    stats:
+      following: "người bạn đang theo dõi"
+      followers: "người theo dõi bạn"
+  follows:
+    show_follow:
+      micropost: "Micropost:"
+      view_my_profile: "xem trang cá nhân"
+    followers:
+      title: "Người theo dõi bạn"
+    following:
+      title: "Người bạn theo dõi"
+    find_user:
+      not_find_user: "Không tìm thấy người dùng!"
