@@ -7,7 +7,7 @@ class FollowsController < ApplicationController
                             .per Settings.user.per_of_page
     render :show_follow
   end
-
+codeforces123
   def followers
     @title = t ".title"
     @users = @user.followers.page(params[:page])
